@@ -5,6 +5,8 @@ import os
 class Config(object):
     # Secret Key that prevents cross site code injection
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
+    # Posts per page setting
+    POSTS_PER_PAGE = 25
     # Debug feature
     DEBUG = True
     # Database interface settings
