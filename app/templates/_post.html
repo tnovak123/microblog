@@ -5,7 +5,7 @@
                     <a href="{{ url_for('user', username=post.author.username) }}">
                         {{ post.author.username }}
                     </a>
-                    said: {{ moment(post.timestamp).fromNow() }}: <b> {{ post.body }} </b>
+                    said: {{ moment(post.timestamp).fromNow() }}: title: {{ post.title }} <a name="single_post" href=" {{ url_for('explore') }} "><b> {{ post.body }} </b></a>
                 </td>
             </tr>
         </table>
